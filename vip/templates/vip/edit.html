@@ -1,0 +1,46 @@
+ {% load static %}
+
+{% include 'vip/header.html' %}
+
+ <link href="{% static "vip/register.css" %}" rel="stylesheet">
+
+    <div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">Please sign up for 521VPN <small>www.521vpn.tk</small></h3>
+			 			</div>
+			 			<div class="panel-body">
+			 			
+			    		<form action="{% url 'vip:handledit' %}"  method="post" role="form">	{% csrf_token %}	    			
+			    			
+			    			<div class="form-group">
+			    				<label for="email">Email:</label>
+			    				<input type="email" name="email" id="email" class="form-control input-sm" value="{{email}}">
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="col-xs-3 col-sm-3 col-md-3">
+			    					<div class="form-group">
+			    						<label for="password">Password:</label>
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-9 col-sm-9 col-md-9">
+			    					<div class="form-group">
+			    						<input type="password" name="password" id="password" class="form-control input-sm" value="{{passwd}}">
+			    					</div>
+			    				</div>
+			    			</div>
+			    			
+			    			<input type="submit" value="Edit" class="btn btn-info btn-block">
+			    		
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+
+
+{% include 'vip/footer.html' %}

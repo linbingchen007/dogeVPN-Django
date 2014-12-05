@@ -1,0 +1,64 @@
+#thumb-slider img {
+width: 64px !important;
+height: 64px !important;
+margin-right: 5px;
+float: left !important;
+display: inline !important;
+}
+#thumb-slider li {
+width: 180px;
+margin-left: 10px;
+display: inline-block;
+float: center;
+}
+media="screen"
+ul li, ol li {
+line-height: inherit;
+}
+media="screen"
+li {
+line-height: 20px;
+}
+media="screen"
+ul, ol {
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+#slider-bg {
+background: url(../img/patterns/slider-background.jpg) no-repeat scroll center top;
+width: 100%;
+height: auto;
+margin-bottom: 30px;
+color: #a7a7a7;
+text-shadow: 0px 1px 0px #000;
+}
+media="screen"
+body, h1, h2, h3, h4, h5, h6, .mybtn, .mybtn-color, .mybtn-small, .mybtn-small-color, label, input, button, select, textarea, input[type="password"], input[type="text"], .submit, .ddsmoothmenu ul li a {
+font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+ .thumb-text {
+padding: 5px;
+font-size: 14px;
+color: #fff;
+font-weight: 600;
+line-height: 1.2em;
+text-shadow: 0px 1px 0px #000;
+background: rgba(0, 0, 0, 0.15);
+-moz-transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+cursor: pointer;
+
+}
+
+ .thumb-text:hover {
+	background: rgba(0, 0, 0, 0.45);
+}
+.clearfix > p{
+	text-align: center;
+}

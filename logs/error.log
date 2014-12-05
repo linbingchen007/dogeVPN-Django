@@ -1,0 +1,175 @@
+[Fri Dec 05 17:03:44 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:03:44 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:03:44 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:03:44 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 17:03:44 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 17:03:44 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 17:04:20 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:04:20 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:04:20 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:04:20 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 17:04:20 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 17:04:20 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 17:08:31 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:08:31 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:08:31 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:08:31 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 17:08:31 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 17:08:31 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 17:31:07 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:31:07 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:31:07 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:31:07 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 17:31:07 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 17:31:07 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 17:42:34 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:42:34 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:42:34 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:42:34 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 17:42:34 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 17:42:34 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 17:57:39 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:57:39 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:57:39 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:57:39 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 12, in <module>
+[Fri Dec 05 17:57:39 2014] [error] [client 202.118.230.199]     s.environ["DJANGO_SETTINGS_MODULE"] = "mysite.settings"
+[Fri Dec 05 17:57:39 2014] [error] [client 202.118.230.199] NameError: name 's' is not defined
+[Fri Dec 05 17:58:03 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:58:03 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:58:03 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:58:03 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 17:58:03 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 17:58:03 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 17:58:06 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 17:58:06 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 17:58:06 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 17:58:06 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 17:58:06 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 17:58:06 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 18:03:03 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 18:03:03 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 18:03:03 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 18:03:03 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 13, in <module>
+[Fri Dec 05 18:03:03 2014] [error] [client 202.118.230.199]     sys.path.append('<PATH_TO_MY_DJANGO_PROJECT>/mysite')
+[Fri Dec 05 18:03:03 2014] [error] [client 202.118.230.199] NameError: name 'sys' is not defined
+[Fri Dec 05 18:03:40 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 18:03:40 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 18:03:40 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 18:03:40 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 21, in <module>
+[Fri Dec 05 18:03:40 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 18:03:40 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 18:51:00 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 18:51:00 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 18:51:00 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 18:51:00 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 21, in <module>
+[Fri Dec 05 18:51:00 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 18:51:00 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 18:54:07 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 18:54:07 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 18:54:07 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 18:54:07 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 21, in <module>
+[Fri Dec 05 18:54:07 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 18:54:07 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 18:54:10 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 18:54:10 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 18:54:10 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 18:54:10 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 21, in <module>
+[Fri Dec 05 18:54:10 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 18:54:10 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 18:54:16 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py' cannot be loaded as Python module.
+[Fri Dec 05 18:54:16 2014] [error] [client 202.118.230.199] mod_wsgi (pid=24751): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/wsgi.py'.
+[Fri Dec 05 18:54:16 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 18:54:16 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/wsgi.py", line 21, in <module>
+[Fri Dec 05 18:54:16 2014] [error] [client 202.118.230.199]     from django.core.wsgi import get_wsgi_application
+[Fri Dec 05 18:54:16 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.wsgi
+[Fri Dec 05 19:04:56 2014] [crit] [client 202.118.230.199] configuration error:  couldn't perform authentication. AuthType not set!: /vip/
+[Fri Dec 05 19:15:49 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353, process='vpn.mrlin.tk', application=''): Failed to parse WSGI script file '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:15:49 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:15:49 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 1
+[Fri Dec 05 19:15:49 2014] [error] [client 202.118.230.199]     mport os
+[Fri Dec 05 19:15:49 2014] [error] [client 202.118.230.199]            ^
+[Fri Dec 05 19:15:49 2014] [error] [client 202.118.230.199] SyntaxError: invalid syntax
+[Fri Dec 05 19:15:52 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353, process='vpn.mrlin.tk', application=''): Failed to parse WSGI script file '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:15:52 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:15:52 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 1
+[Fri Dec 05 19:15:52 2014] [error] [client 202.118.230.199]     mport os
+[Fri Dec 05 19:15:52 2014] [error] [client 202.118.230.199]            ^
+[Fri Dec 05 19:15:52 2014] [error] [client 202.118.230.199] SyntaxError: invalid syntax
+[Fri Dec 05 19:16:35 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353, process='vpn.mrlin.tk', application=''): Failed to parse WSGI script file '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:16:35 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:16:35 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 7
+[Fri Dec 05 19:16:35 2014] [error] [client 202.118.230.199]     sys.path.append(path)
+[Fri Dec 05 19:16:35 2014] [error] [client 202.118.230.199]       ^
+[Fri Dec 05 19:16:35 2014] [error] [client 202.118.230.199] IndentationError: expected an indented block
+[Fri Dec 05 19:16:37 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353, process='vpn.mrlin.tk', application=''): Failed to parse WSGI script file '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:16:37 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:16:37 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 7
+[Fri Dec 05 19:16:37 2014] [error] [client 202.118.230.199]     sys.path.append(path)
+[Fri Dec 05 19:16:37 2014] [error] [client 202.118.230.199]       ^
+[Fri Dec 05 19:16:37 2014] [error] [client 202.118.230.199] IndentationError: expected an indented block
+[Fri Dec 05 19:16:38 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353, process='vpn.mrlin.tk', application=''): Failed to parse WSGI script file '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:16:38 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:16:38 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 7
+[Fri Dec 05 19:16:38 2014] [error] [client 202.118.230.199]     sys.path.append(path)
+[Fri Dec 05 19:16:38 2014] [error] [client 202.118.230.199]       ^
+[Fri Dec 05 19:16:38 2014] [error] [client 202.118.230.199] IndentationError: expected an indented block
+[Fri Dec 05 19:18:47 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:18:47 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:18:47 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:18:47 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 11, in <module>
+[Fri Dec 05 19:18:47 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:18:47 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:27:26 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:27:26 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25353): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:27:26 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:27:26 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 11, in <module>
+[Fri Dec 05 19:27:26 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:27:26 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:27:36 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:27:36 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:27:36 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:27:36 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 11, in <module>
+[Fri Dec 05 19:27:36 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:27:36 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:34:43 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:34:43 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:34:43 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:34:43 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 12, in <module>
+[Fri Dec 05 19:34:43 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:34:43 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:35:54 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:35:54 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:35:54 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:35:54 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 12, in <module>
+[Fri Dec 05 19:35:54 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:35:54 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:36:53 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:36:53 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:36:53 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:36:53 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 3, in <module>
+[Fri Dec 05 19:36:53 2014] [error] [client 202.118.230.199]     import django
+[Fri Dec 05 19:36:53 2014] [error] [client 202.118.230.199] ImportError: No module named django
+[Fri Dec 05 19:37:33 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:37:33 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:37:33 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:37:33 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 11, in <module>
+[Fri Dec 05 19:37:33 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:37:33 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:38:29 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:38:29 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25410): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:38:29 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:38:29 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 11, in <module>
+[Fri Dec 05 19:38:29 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:38:29 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:46:22 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25509): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:46:22 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25509): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:46:22 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:46:22 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 11, in <module>
+[Fri Dec 05 19:46:22 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:46:22 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
+[Fri Dec 05 19:47:28 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25509): Target WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi' cannot be loaded as Python module.
+[Fri Dec 05 19:47:28 2014] [error] [client 202.118.230.199] mod_wsgi (pid=25509): Exception occurred processing WSGI script '/var/www/vpn.mrlin.tk/mysite/django.wsgi'.
+[Fri Dec 05 19:47:28 2014] [error] [client 202.118.230.199] Traceback (most recent call last):
+[Fri Dec 05 19:47:28 2014] [error] [client 202.118.230.199]   File "/var/www/vpn.mrlin.tk/mysite/django.wsgi", line 11, in <module>
+[Fri Dec 05 19:47:28 2014] [error] [client 202.118.230.199]     import django.core.handlers.wsgi
+[Fri Dec 05 19:47:28 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi

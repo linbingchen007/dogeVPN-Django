@@ -1,0 +1,27 @@
+
+
+{% include 'vip/header.html' %}
+
+ {% load static %}
+ <link href="{% static "vip/login.css" %}" rel="stylesheet">
+
+<div class="container">
+	<div class="login-container">
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                <form action="{% url "vip:handlelogin" %}" method="post">
+                    {% csrf_token %}    
+                    <input name="username" type="text" placeholder="UserName">
+                    <input name="password" type="password" placeholder="Password">
+                    <button class="btn btn-info btn-block login" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        
+</div>
+
+
+
+
+{% include 'vip/footer.html' %}
