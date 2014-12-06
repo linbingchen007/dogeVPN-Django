@@ -1,7 +1,7 @@
 
 
 {% include 'vip/header.html' %}
-<meta http-equiv="refresh" content="3;url={% url "vip:index" %}" />
+<meta http-equiv="refresh" content="3;url={% url retlink %}" />
 
 
     <div class="container">
@@ -9,7 +9,21 @@
         <h1>{{errinf}}</h1>
       </div>
       <div class="page-body">
-        <p1>3秒之后返回主页</p1>
+        <p1>3秒之后返回
+        	{% ifequal retlink  "vip:index" %}
+        		主页
+        	{% endifequal %}
+        	{%  ifequal retlink  "vip:account" %}
+        		个人信息页面
+        	{% endifequal %}
+        	{%  ifequal retlink  "vip:login" %}
+        		登陆页面
+        	{% endifequal %}
+        	{%  ifequal retlink  "vip:register" %}
+        		注册页面
+        	{% endifequal %}
+        	
+        </p1>
       </div>
       
     </div>
