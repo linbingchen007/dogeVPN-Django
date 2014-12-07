@@ -1,62 +1,101 @@
 
- {% load static  %}
+{% load static  %}
 {% include 'vip/header.html' %}
-    <link href="{% static "vip/register.css" %}" rel="stylesheet">
+<link href="{% static "vip/register.css" %}" rel="stylesheet">
 
 <div class="container">
-      <br>
-      <div class="row">
-      <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
-           <A href="{% url "vip:edit" %}" >修改资料</A>
-           &nbsp;|
-           <A href="{% url "vip:edit" %}" >账户充值</A>
-           &nbsp;|
-        <A href="{% url "vip:logout" %}" >注销</A>     
-        
+  <br>
+  <div class="row">
+    <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+     <A href="{% url "vip:edit" %}" >修改资料</A>
+     &nbsp;|
+     <A href="{% url "vip:deposit" %}" >账户充值</A>
+     &nbsp;|
+     <A href="{% url "vip:logout" %}" >注销</A>     
+
+   </div>
+   <br>
+   <br>
+   <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4" >
+
+
+    <div  id="account" class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><small>账号:{{user.username}}</small></h3>
       </div>
-      <br>
-      <br>
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4" >
-   
-   
-          <div  id="account" class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title"><small>账号:{{user.username}}</small></h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">     
-                
-                <div class=" col-md-9 col-lg-9 "> 
-                  <table class="table table-user-information">
-                    <tbody>
-                      <tr>
-                        <td><small>密码:</small></td>
-                        <td><small>{{user.password}}</small></td>
-                      </tr>
-                      <tr>
-                        <td><small>余额:</small></td>
-                        <td><small>{{user.balance}} 元</small></td>
-                      </tr>
-                      <tr>
-                        <td><small>剩余天数:</td>
-                        <td><small>{{user.available_days}} 天</small></td>
-                      </tr>                   
-                         <tr>    
-                        <td><small>Email</td>
-                        <td><a href="mailto:{{user.email}}"><small>{{user.email}}</small></a></td>
-                      </tr>
-                    </tbody>
-                  </table>                 
-                 
+      <div class="panel-body">
+        <div class="row">     
+
+          <div class=" col-md-12 col-lg-12 "> 
+            <table class="table table-user-information">
+              <tbody>
+
+                <div class="row">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <small>密码:</small>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <small>{{user.password}}</small>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+
+                <div class="row">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <small>余额:</small>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <small>{{user.balance}} 元</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <small>剩余天数:</small>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <small>{{user.available_days}} 天</small>
+                    </div>
+                  </div>
+                </div>
                 
-            
+                <div class="row">
+                  <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="form-group">
+                      <small>Email:</small>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <a href="mailto:{{user.email}}"><small>{{user.email}}</small></a>
+                    </div>
+                  </div>
+                </div>
+                
+                                   
+                
+              </tbody>
+            </table>                 
+
           </div>
         </div>
       </div>
+
+
     </div>
+  </div>
+</div>
+</div>
 
 
 

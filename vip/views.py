@@ -234,3 +234,7 @@ def logout(request):
                 'retlink':"vip:index",
      }
     return render(request, 'vip/wrong.html', context)
+
+
+def deposit(request):
+    
