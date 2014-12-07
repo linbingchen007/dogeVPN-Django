@@ -235,6 +235,5 @@ def logout(request):
      }
     return render(request, 'vip/wrong.html', context)
 
-
 def deposit(request):
-    
+    return render(request,'vip/index.html')
