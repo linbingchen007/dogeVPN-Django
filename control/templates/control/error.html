@@ -1,0 +1,29 @@
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="refresh" content="3;url={% url "control:index" %}" />
+   {% load static  %}   
+    <link href="{% static "dist/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "control/index.css" %}" rel="stylesheet">
+</head>
+<body>
+<p id="err">
+{{errinf}}
+<br>
+3秒后返回主页
+</p>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>Mrlin © - 2014</p>                
+            </div>
+        </div>
+    </div>
+</footer>
+<script src='{% static "control/index.js" %}' type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">  
+</script>
+<script src="{% static "dist/js/bootstrap.min.js" %} "></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
