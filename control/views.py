@@ -29,18 +29,13 @@ def chklogin(request):
     return render(request, 'control/error.html',content)
 
 def prospanel(request):
-    c = {}
-    c.update(csrf(request))
-    return render_to_response('control/index.html',c)
-
-def list(request):
     vpn_type_str = request.POST['vpntype']
     fg = 0
     if vpn_type_str == 'all':
         fg = 0
-    elif vpn_type_str == 'pptpd':
+    elif vpn_type_str == 'pptp':
         fg = 1
-    elif vpn_type_str == 'l2tpd':
+    elif vpn_type_str == 'l2tp':
         fg = 2
     else:
         fg = -1
@@ -49,16 +44,18 @@ def list(request):
     res_accounts = []
     while (curstr != ''):
         cur_account_list = curstr.split()
-        if (cur_account_list[1] == 'pptpd' or cur_account_list == 'l2tpd'):
+        if (len(cur_account_list) >= 4 and ( cur_account_list[1] == 'pptpd' or cur_account_list[1] == 'l2tpd')):
             if (fg == 0):
                 res_accounts.append(cur_account_list)
             elif (fg == 1 and cur_account_list[1] == 'pptpd'):
                 res_accounts.append(cur_account_list)
-            elif (fg == 1 and cur_account_list[1] == 'l2tpd'):
+            elif (fg == 2 and  cur_account_list[1] == 'l2tpd'):
                 res_accounts.append(cur_account_list)
             else:
                 pass
         curstr = f.readline()
-
+    content = {"vpn_account_list":res_accounts,
+                "fuc":"tst",
+            }
     f.close()
-    return render(request, 'control/panel.html', res_accounts)
+    return render(request, 'control/panel.html', content)

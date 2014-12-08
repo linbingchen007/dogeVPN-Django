@@ -18,7 +18,7 @@
  							<option value="all">ALL</option>
  						</select>
  						<input type="submit" id="btn-list-account" class="btn btn-primary" value="List Account">
-
+                       {{fuc}}
  					</div>
 
  				</form>
@@ -31,7 +31,10 @@
  {% if vpn_account_list %}
  	<ul>
  		{% for account in vpn_account_list %}
- 			<li> {{account.0}} {{account.1}} {{account.2}} {{account.3}}  </li>
+ 			<li> {% for item in account %} 
+                    {{item}}
+                {% endfor %}
+             </li>
  		{% endfor %}
  	</ul>
  {% endif %}

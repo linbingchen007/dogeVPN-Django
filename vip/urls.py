@@ -18,5 +18,5 @@ urlpatterns = [
     url(r'^handlelogin$', views.handlelogin, name='handlelogin'),
     url(r'^handledit$', views.handledit, name='handledit'),
     url(r'^howtobuy$', views.howtobuy, name='howtobuy'),
-    url(r'^deposit$', views.deposit, name='deposit'),    
+    url(r'^deposit$', views.deposit, name='deposit'),
 ]

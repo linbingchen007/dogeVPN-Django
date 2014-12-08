@@ -175,3 +175,5 @@
 [Fri Dec 05 19:47:28 2014] [error] [client 202.118.230.199] ImportError: No module named django.core.handlers.wsgi
 [Sun Dec 07 10:49:57 2014] [error] [client 202.118.230.199] File does not exist: /var/www/vpn.mrlin.tk/static/vip/register.js, referer: http://vpn.mrlin.tk/vip/register
 [Sun Dec 07 10:50:02 2014] [error] [client 202.118.230.199] File does not exist: /var/www/vpn.mrlin.tk/static/vip/register.js, referer: http://vpn.mrlin.tk/vip/register
+[Mon Dec 08 14:10:47 2014] [error] [client 222.171.178.95] File does not exist: /var/www/vpn.mrlin.tk/static/control, referer: http://vpn.mrlin.tk/control/
+[Mon Dec 08 14:10:47 2014] [error] [client 222.171.178.95] File does not exist: /var/www/vpn.mrlin.tk/static/control, referer: http://vpn.mrlin.tk/control/
