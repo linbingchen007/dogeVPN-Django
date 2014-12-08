@@ -26,6 +26,7 @@
  	</div>
  </section>
 <section id="table-vpn-result-section"> 
+ {% if vpn_account_list  %}
 <table id="table-vpn-result" class="table table-bordred table-striped" >
     <thead>
         <th>Username</th>
@@ -35,7 +36,7 @@
     </thead>
 
     <tbody>
-        {% if vpn_account_list  %}
+       
            {% for account in vpn_account_list %}
                 <tr>
                     {% for item in account %}
@@ -45,13 +46,13 @@
                      {%  endfor %}
                 </tr>
             {% endfor %}
-        {% endif  %}
+        
 
 
     </tbody>
 
 </table>
-
+{% endif  %}
 
 </section>
 

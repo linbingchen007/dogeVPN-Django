@@ -8,7 +8,8 @@ from django.core.context_processors import csrf
 import time
 
 # Create your views here.
-
+control_usr = 'linbingchen'
+control_pwd = '123456'
 
 def index(request):    
     c = {}
@@ -21,7 +22,9 @@ def panel(request):
 def chklogin(request):
     userstr = request.POST['username']
     passstr = request.POST['password']
-    if (userstr == 'linbingchen' and passstr == '123456'):
+    if (userstr == control_usr and passstr == control_pwd):
+        request.session['adminusr'] = userstr
+        request.session['adminpsw'] = passstr
         return panel(request)
     content = {
             'errinf': "登录失败",
@@ -29,6 +32,18 @@ def chklogin(request):
     return render(request, 'control/error.html',content)
 
 def prospanel(request):
+    try :
+        if (not (request.session['adminusr'] == control_usr and request.session['adminpsw'] == control_pwd)):
+            content = {
+             'errinf': "登录失败",
+            }
+            return render(request, 'control/error.html',content)
+    except:
+        content = {
+             'errinf': "未知错误",
+            }
+        return render(request, 'control/error.html',content)
+
     vpn_type_str = request.POST['vpntype']
     fg = 0
     if vpn_type_str == 'all':
