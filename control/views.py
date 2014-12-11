@@ -5,11 +5,22 @@ from django.template import RequestContext, loader
 from django.shortcuts import render, render_to_response
 from django.forms import ModelForm
 from django.core.context_processors import csrf
+from vip.models import User
 import time
-
+import control.crudvpn
+import platform
 # Create your views here.
 control_usr = 'linbingchen'
 control_pwd = '123456'
+
+
+def getppppath():
+    ostype = platform.system()
+    if ostype == 'Windows':
+        return "E:\\usrpas.txt"
+    if ostype == 'Linux':
+        return "/etc/ppp/chap-secrets"
+
 
 def index(request):    
     c = {}
@@ -18,6 +29,11 @@ def index(request):
 
 def panel(request):
     return render(request, 'control/panel.html')
+
+
+
+
+
 
 def chklogin(request):
     userstr = request.POST['username']
@@ -54,7 +70,7 @@ def prospanel(request):
         fg = 2
     else:
         fg = -1
-    f = open('/etc/ppp/chap-secrets', 'r')
+    f = open(getppppath(), 'r')
     curstr = f.readline()
     res_accounts = []
     while (curstr != ''):
