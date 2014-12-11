@@ -1,15 +1,34 @@
+h1 {
+	text-align: center;
+}
 #list-vpn-select > .container{
     padding-top:40px;
     margin-left:40px;
     left:40px;
 }
 
+#list-vpn-account {	
+	width:300px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	border-left: 0px;
+}
+#check-vpn-account {
+	 position: absolute;
+    left: 200px;
+	top:0px;
+    width:500px;
+    padding-left:10px;
+}
+
 #table-vpn-result-section {
     top:50px;
     left:400px;
-    width:500px;
+    width:800px;
     padding-left:50px;
 }
+
 #footer > .container{
     text-align: center;
 }

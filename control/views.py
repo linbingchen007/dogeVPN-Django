@@ -9,6 +9,7 @@ from vip.models import User
 import time
 import control.crudvpn
 import platform
+from control import crudvpn
 # Create your views here.
 control_usr = 'linbingchen'
 control_pwd = '123456'
@@ -32,8 +33,23 @@ def panel(request):
 
 
 
+def operdel(request, del_ipaddr, last_type):
+    crudvpn.delvpnbyipaddr([del_ipaddr])
+    return prospanel(request, vpn_type_str = last_type)
+
+def refreshvpn(request):    
+    crudvpn.check()
+    return prospanel(request,  'all')
 
 
+#def updatevpnaccount(vpnusr, vpnpas, vpntype):
+def operchg(request, usr_name, last_type, usr_type, usr_pas):
+    if usr_type == 'l2tpd':
+        usr_type = 'pptp'
+    else:
+        usr_type = 'l2tp'
+    crudvpn.updatevpnaccount(usr_name, usr_pas, usr_type)
+    return prospanel(request,  last_type)
 
 def chklogin(request):
     userstr = request.POST['username']
@@ -47,7 +63,7 @@ def chklogin(request):
         }
     return render(request, 'control/error.html',content)
 
-def prospanel(request):
+def prospanel(request, vpn_type_str = 'null' ):
     try :
         if (not (request.session['adminusr'] == control_usr and request.session['adminpsw'] == control_pwd)):
             content = {
@@ -59,8 +75,8 @@ def prospanel(request):
              'errinf': "未知错误",
             }
         return render(request, 'control/error.html',content)
-
-    vpn_type_str = request.POST['vpntype']
+    if vpn_type_str == 'null':
+        vpn_type_str = request.POST['vpntype']
     fg = 0
     if vpn_type_str == 'all':
         fg = 0
@@ -87,6 +103,7 @@ def prospanel(request):
         curstr = f.readline()
     content = {"vpn_account_list":res_accounts,
                 "fuc":"tst",
+                "last_type":vpn_type_str,
             }
     f.close()
     return render(request, 'control/panel.html', content)

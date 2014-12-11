@@ -4,6 +4,7 @@
  	<link href="{% static "dist/css/bootstrap.min.css" %}" rel="stylesheet">
  	<link href="{% static "control/panel.css" %}" rel="stylesheet">
  </head>
+<h1>Control Panel</h1>
  <section id="list-vpn-select">
  	<div class="container">
  		<div class="row">
@@ -18,9 +19,17 @@
  							<option value="all">ALL</option>
  						</select>
  						<input type="submit" id="btn-list-account" class="btn btn-primary" value="List Account">
+
  					</div>
 
  				</form>
+                <form action="{% url "control:refreshvpn" %}" method="post" id ='check-vpn-account'>
+                    {% csrf_token %}  
+                    <div class="form-group" >
+                        <input type="submit" id="btn-list-account" class="btn btn-primary" value="Check">
+
+                    </div>
+                </form>                             
  			</div>
  		</div>
  	</div>
@@ -33,6 +42,7 @@
         <th>Type</th>
         <th>Password</th>
         <th>IP Address</th>
+        <th>Operation</th>
     </thead>
 
     <tbody>
@@ -44,6 +54,9 @@
                             {{item}}
                         </td>
                      {%  endfor %}
+                     <td><a href="{% url "control:operdel" account.3 last_type %}" class="btn btn-default">Del</a>
+                     <a href="{% url "control:operchg" account.0 last_type account.1 account.2 %}" class="btn btn-default">Change VPNtype</a>   
+                     </td>
                 </tr>
             {% endfor %}
         

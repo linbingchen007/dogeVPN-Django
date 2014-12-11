@@ -40,6 +40,7 @@ def delvpnbyname(names):
 
 # 根据IP地址删除vpn账号
 
+
 def delvpnbyipaddr(ipaddrs):
     f = open(getppppath(), 'r')
     totstr = ''
@@ -48,10 +49,11 @@ def delvpnbyipaddr(ipaddrs):
         cur_account = curstr.split()
         deled_fg = 0
         if (len(cur_account) >= 4 and (cur_account[1] == 'pptpd' or cur_account[1] == 'l2tpd')):
-            account_ipaddr = cur_account[3]
-
+            account_ipaddr = cur_account[3]            
             for ipaddr in ipaddrs:
                 if account_ipaddr == ipaddr:
+                    print ipaddr
+                    print account_ipaddr
                     deled_fg = 1
                     break
         if deled_fg == 0:
@@ -87,7 +89,10 @@ def check():
     delvpnbyname(del_names)
     need_account_list = all_user_list.filter(available_days__gt=0)
     for need_account in need_account_list:
-        addvpnaccount(need_account.username, need_account.password, 'pptpd')
+        addvpnaccount(need_account.username, need_account.password, 'pptp')
+
+    print del_names
+    print need_account_list
 
 
 # 添加VPN账号
@@ -119,7 +124,7 @@ def addvpnaccount(vpnusr, vpnpas, vpntype):
                 print account_name
                 name_dict[account_name] = 1
             else:
-                del_ipaddrs.append(account_ipaddr)
+                del_ipaddrs.append(cur_account[3])
                 deled_fg = 1
 
             if not (account_ipaddr in ipaddr_dict):
@@ -127,7 +132,7 @@ def addvpnaccount(vpnusr, vpnpas, vpntype):
                 ipaddr_dict[account_ipaddr] = 1
             else:
                 if deled_fg == 0:
-                    del_ipaddrs.append(account_ipaddr)
+                    del_ipaddrs.append(cur_account[3])
         curstr = f.readline()
     if (not (vpnusr in name_dict)):
         if vpntype == 'l2tp':
@@ -159,6 +164,8 @@ def addvpnaccount(vpnusr, vpnpas, vpntype):
     return retval
 
 # 改变VPN类型
+
+
 def updatevpnaccount(vpnusr, vpnpas, vpntype):
     delvpnbyname([vpnusr])
-    addvpnaccount(vpnusr,vpnpas,vpntype)
+    addvpnaccount(vpnusr, vpnpas, vpntype)
