@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 from vip.models import User
+from vip.models import GlobVar
 import platform
+import time
+import datetime
 # 根据系统类型返回路径
 
 
@@ -163,9 +166,36 @@ def addvpnaccount(vpnusr, vpnpas, vpntype):
     delvpnbyipaddr(del_ipaddrs)
     return retval
 
+
+
+
 # 改变VPN类型
 
 
 def updatevpnaccount(vpnusr, vpnpas, vpntype):
     delvpnbyname([vpnusr])
     addvpnaccount(vpnusr, vpnpas, vpntype)
+
+def loopwork():
+    fgobj = GlobVar.objects.all()[0]
+    fgobj.currentfg = True
+    fgobj.save()
+    print fgobj.autosubavday
+    try:
+        while fgobj.autosubavday:
+            print fgobj.autosubavday
+            all_user_list = User.objects.all()
+            needchg_account_list = all_user_list.filter(available_days__gt=0)
+            for needchg_account in needchg_account_list:
+                needchg_account.available_days -= 1
+                needchg_account.save()
+            time.sleep(15)
+            fgobj = GlobVar.objects.all()[0]
+    except:
+        pass
+    fgobj.currentfg = False
+    fgobj.save()
+    print "end"
+
+if __name__=='__main__':
+    loopwork()

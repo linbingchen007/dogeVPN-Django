@@ -9,6 +9,7 @@ from vip.models import User
 import time
 import control.crudvpn
 import platform
+from vip.models import GlobVar
 from control import crudvpn
 # Create your views here.
 control_usr = 'linbingchen'
@@ -107,3 +108,20 @@ def prospanel(request, vpn_type_str = 'null' ):
             }
     f.close()
     return render(request, 'control/panel.html', content)
+
+def state(request):
+    fgobj = GlobVar.objects.all()[0]
+    return HttpResponse(unicode(fgobj.currentfg))
+
+
+def switch(request):
+    fgobj = GlobVar.objects.all()[0]
+    if not fgobj.currentfg:
+        fgobj.autosubavday = True
+        fgobj.save()
+        crudvpn.loopwork()
+    else:
+        fgobj.autosubavday = False
+        fgobj.save()
+    fgobj = GlobVar.objects.all()[0]
+    return HttpResponse(unicode(fgobj.currentfg))
