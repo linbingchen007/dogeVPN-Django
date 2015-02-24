@@ -62,8 +62,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
-        'USER': 'localusr',
-        'PASSWORD' :'123456',
+        'USER': 'name',
+        'PASSWORD' :'password',
         'HOST' : '127.0.0.1',
         'PORT' : '3306',
     }
@@ -87,4 +87,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = "/var/www/vpn.mrlin.tk/static/"
+STATIC_ROOT = "/var/www/website/static/"
